@@ -5,6 +5,7 @@ import {createConnection} from 'typeorm'
 import {Product} from "./entity/product";
 import * as amqp from 'amqplib/callback_api';
 
+// I guess it automatically knows to get the credentials from ormconfig.json
 createConnection().then(db => {
     const productRepository = db.getRepository(Product);
 
@@ -20,6 +21,7 @@ createConnection().then(db => {
 
             const app = express()
 
+            // 3000 is for react, 8080 for vue, 4200 for angular. Since this app is listening on 8000, which is different from these front-end ports, have to use cors to allow it.
             app.use(cors({
                 origin: ['http://localhost:3000', 'http://localhost:8080', 'http://localhost:4200']
             }))

@@ -11,28 +11,27 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.Product = void 0;
 var typeorm_1 = require("typeorm");
-var Product = /** @class */ (function () {
+var Product = exports.Product = /** @class */ (function () {
     function Product() {
     }
     __decorate([
-        typeorm_1.PrimaryGeneratedColumn(),
+        (0, typeorm_1.PrimaryGeneratedColumn)(),
         __metadata("design:type", Number)
     ], Product.prototype, "id", void 0);
     __decorate([
-        typeorm_1.Column(),
+        (0, typeorm_1.Column)(),
         __metadata("design:type", String)
     ], Product.prototype, "title", void 0);
     __decorate([
-        typeorm_1.Column(),
+        (0, typeorm_1.Column)(),
         __metadata("design:type", String)
     ], Product.prototype, "image", void 0);
     __decorate([
-        typeorm_1.Column({ default: 0 }),
+        (0, typeorm_1.Column)({ default: 0 }),
         __metadata("design:type", Number)
     ], Product.prototype, "likes", void 0);
     Product = __decorate([
-        typeorm_1.Entity()
+        (0, typeorm_1.Entity)()
     ], Product);
     return Product;
 }());
-exports.Product = Product;

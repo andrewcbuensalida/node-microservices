@@ -1,5 +1,6 @@
 https://www.youtube.com/watch?v=Zc2mQSQXoS4
 
+for admin side:
 Create a new database in mysql workbench
 click create a new schema
 schema name = yt_node_admin
@@ -12,6 +13,7 @@ create product table
   PRIMARY KEY (`id`));
 
 OR with gui
+OR actually it automatically creates the table when running npm start because of createConnection of typeorm. 
 
 To start developing, download typescript globally
   npm i typescript -g
@@ -19,6 +21,13 @@ To start developing, download typescript globally
 Watch ts files and automatically convert to js
   tsc -w
 
+=============================================
+for main:
+download mongodb
+to start:
+  npm start
+Watch ts files and automatically convert to js
+  tsc -w
 =============================================
 run rabbitmq container
    docker run -d --rm --name rabbitmq -p 5672:5672 -p 15672:15672 rabbitmq:3.12-management

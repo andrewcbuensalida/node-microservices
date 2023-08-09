@@ -1,5 +1,7 @@
 https://www.youtube.com/watch?v=Zc2mQSQXoS4
 
+https://lucid.app/lucidchart/aadee838-9e81-4d05-94c3-565477a4e178/edit?viewport_loc=177%2C43%2C1705%2C886%2C0_0&invitationId=inv_ac85dd57-5db3-4142-b256-746f45a8d5b3
+
 for admin side:
 Create a new database in mysql workbench
 click create a new schema
@@ -22,7 +24,7 @@ Watch ts files and automatically convert to js
   tsc -w
 
 =============================================
-for main:
+for main (have to run this before admin to create the queues):
 download mongodb
 to start:
   npm start

@@ -52,7 +52,7 @@ var axios_1 = require("axios");
             if (error1) {
                 throw error1;
             }
-            // these create the queue if it doesn't exist already
+            // these create the queue if it doesn't exist already. TODO might need to put these in admin too.
             channel.assertQueue("product_created", { durable: false });
             channel.assertQueue("product_updated", { durable: false });
             channel.assertQueue("product_deleted", { durable: false });
